@@ -57,7 +57,7 @@ export default function Home() {
               href="mailto:parvezsaifi2258@gmail.com?subject=Resume Request"
               className="hidden sm:inline-flex items-center gap-1 bg-indigo-500/10 border border-indigo-500/25 px-2.5 py-1 rounded text-[10px] font-mono text-indigo-300 hover:bg-indigo-500/20 hover:text-white transition-all shadow-glow"
             >
-              <Download className="w-3 h-3" /> REQUEST CV
+              <Download className="w-3 h-3" /> DOWNLOAD RESUME
             </a>
           </div>
         </div>
@@ -70,7 +70,7 @@ export default function Home() {
         
         <div className="max-w-6xl mx-auto px-4 relative text-center">
           <div className="inline-flex items-center gap-2 bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 rounded-full text-indigo-400 text-xs font-semibold font-mono mb-6 uppercase tracking-wider">
-            <Cpu className="w-3.5 h-3.5" /> Full Stack Systems Engineer
+            <Cpu className="w-3.5 h-3.5" /> Full Stack Engineer
           </div>
           
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-[1.05] mb-6">
@@ -79,7 +79,7 @@ export default function Home() {
           </h1>
 
           <p className="text-muted-foreground/90 max-w-2xl mx-auto text-sm sm:text-base md:text-lg leading-relaxed mb-8">
-            Hi, I&apos;m Parvez Saifi. I design and build production-grade web applications, secure high-throughput backend services, and automated cloud environments—translating complex product logic into clean, structured codebase realities.
+            Hi, I&apos;m Parvez Saifi. I build production-grade full-stack applications using React, Next.js, Node.js, PostgreSQL, Docker, and AWS. I focus on developing secure backend systems, optimizing database queries, and creating scalable software that solves real-world problems.
           </p>
 
           {/* Minimal Trust Signals Banner */}
@@ -94,11 +94,11 @@ export default function Home() {
             </span>
             <span className="flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full" />
-              <span>30+ Core Technical Capabilities</span>
+              <span>10+ Core Technologies</span>
             </span>
             <span className="flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse" />
-              <span>Open to Roles / Collaborations</span>
+              <span>Open to Work</span>
             </span>
           </div>
 
