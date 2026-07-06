@@ -36,7 +36,7 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-3">
             <a
-              href="https://linkedin.com/in/parvez-saifi"
+              href="https://www.linkedin.com/in/parvez-saifi-16940a361/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-white transition-colors"
@@ -231,7 +231,7 @@ export default function Home() {
             <span>Handcrafted by design agency standards. Built in Next.js.</span>
           </div>
           <div className="flex items-center gap-4">
-            <a href="https://linkedin.com/in/parvez-saifi" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LINKEDIN</a>
+            <a href="https://www.linkedin.com/in/parvez-saifi-16940a361/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LINKEDIN</a>
             <a href="https://github.com/parvezs2442" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GITHUB</a>
             <a href="mailto:parvezsaifi2258@gmail.com" className="hover:text-white transition-colors">EMAIL</a>
           </div>

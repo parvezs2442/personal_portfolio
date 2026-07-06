@@ -131,7 +131,7 @@ export default function CommandCenter() {
       category: "Action",
       shortcut: "⌘ L",
       icon: <ArrowRight className="w-4 h-4 animate-pulse" />,
-      action: () => window.open("https://linkedin.com/in/parvez-saifi", "_blank")
+      action: () => window.open("https://www.linkedin.com/in/parvez-saifi-16940a361/", "_blank")
     },
     {
       id: "diag-run",

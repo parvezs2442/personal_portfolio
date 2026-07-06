@@ -109,7 +109,7 @@ export default function InteractiveConsole() {
         setLogs(prev => [
           ...prev,
           { text: "Social Endpoints:", type: "output" },
-          { text: "  LinkedIn: linkedin.com/in/parvez-saifi", type: "output" },
+          { text: "  LinkedIn: linkedin.com/in/parvez-saifi-16940a361", type: "output" },
           { text: "  GitHub: github.com/parvezs2442", type: "output" },
           { text: "  Email: parvezsaifi2258@gmail.com", type: "output" }
         ]);
@@ -271,7 +271,7 @@ export default function InteractiveConsole() {
                   </a>
 
                   <a 
-                    href="https://linkedin.com/in/parvez-saifi" 
+                    href="https://www.linkedin.com/in/parvez-saifi-16940a361/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="flex items-center justify-between p-3 bg-background/50 border border-border/40 rounded-xl hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all group"
@@ -282,7 +282,7 @@ export default function InteractiveConsole() {
                       </div>
                       <div>
                         <div className="text-[11px] font-mono text-muted-foreground">LINKEDIN PROFILE</div>
-                        <div className="text-xs font-semibold text-white mt-0.5">linkedin.com/in/parvez-saifi</div>
+                        <div className="text-xs font-semibold text-white mt-0.5">linkedin.com/in/parvez-saifi-16940a361</div>
                       </div>
                     </div>
                     <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-white transition-colors" />
