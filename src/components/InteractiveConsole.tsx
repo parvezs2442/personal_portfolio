@@ -170,8 +170,9 @@ export default function InteractiveConsole() {
         
         {/* Title */}
         <div className="mb-12">
-          <div className="inline-flex items-center gap-2 bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 rounded-full text-indigo-400 text-xs font-semibold font-mono mb-4 uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5" /> Communications
+          <div className="flex items-center gap-4 mb-4">
+            <span className="text-xs font-mono font-bold text-accent tracking-widest uppercase">04 CONTACT</span>
+            <div className="h-px bg-border flex-grow" />
           </div>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white">
             Get in Touch
@@ -187,14 +188,14 @@ export default function InteractiveConsole() {
           {/* Terminal (8-cols) */}
           <div 
             onClick={focusInput}
-            className="lg:col-span-8 bg-card/50 border border-border/80 rounded-2xl p-4 md:p-6 shadow-premium font-mono text-xs flex flex-col justify-between min-h-[380px] cursor-text relative overflow-hidden"
+            className="lg:col-span-8 bg-card border border-border rounded-2xl p-4 md:p-6 shadow-premium font-mono text-xs flex flex-col justify-between min-h-[380px] cursor-text relative overflow-hidden"
           >
             
             {/* Terminal Top tab */}
             <div>
               <div className="flex items-center justify-between pb-3 mb-4 border-b border-border/40 text-muted-foreground/75 text-[10px]">
                 <span className="flex items-center gap-1.5">
-                  <Terminal className="w-4 h-4 text-indigo-400" />
+                  <Terminal className="w-4 h-4 text-accent" />
                   INTERACTIVE_SHELL.SH
                 </span>
                 <span>UTC_MODE</span>
@@ -206,7 +207,7 @@ export default function InteractiveConsole() {
                   let color = "text-muted-foreground";
                   if (log.type === "input") color = "text-white font-bold";
                   if (log.type === "error") color = "text-rose-400";
-                  if (log.type === "system") color = "text-indigo-400 font-semibold";
+                  if (log.type === "system") color = "text-accent font-semibold";
                   if (log.type === "output") color = "text-foreground/90";
                   
                   return (
@@ -220,7 +221,7 @@ export default function InteractiveConsole() {
 
             {/* Input Line */}
             <form onSubmit={handleCommand} className="flex items-center gap-1 mt-4 pt-3 border-t border-border/30 z-10 relative">
-              <span className="text-indigo-400 shrink-0 font-bold">parvezsaifi@portfolio:~$</span>
+              <span className="text-accent shrink-0 font-bold">parvezsaifi@portfolio:~$</span>
               <input
                 ref={inputRef}
                 type="text"
@@ -247,7 +248,7 @@ export default function InteractiveConsole() {
           <div className="lg:col-span-4 flex flex-col justify-between gap-4">
             
             {/* Direct Connect Grid */}
-            <div className="bg-card/45 border border-border/80 rounded-2xl p-6 shadow-premium flex-grow flex flex-col justify-between">
+            <div className="bg-card border border-border rounded-2xl p-6 shadow-premium flex-grow flex flex-col justify-between">
               <div className="space-y-4">
                 <h3 className="text-sm font-mono text-white font-bold uppercase tracking-widest border-b border-border/30 pb-2">
                   Direct Ledger
@@ -256,10 +257,10 @@ export default function InteractiveConsole() {
                 <div className="space-y-3.5">
                   <a 
                     href="mailto:parvezsaifi2258@gmail.com" 
-                    className="flex items-center justify-between p-3 bg-background/50 border border-border/40 rounded-xl hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all group"
+                    className="flex items-center justify-between p-3 bg-background/50 border border-border/40 rounded-xl hover:border-accent/30 hover:bg-accent/5 transition-all group"
                   >
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-lg bg-indigo-500/10 border border-indigo-500/25 flex items-center justify-center text-indigo-400">
+                      <div className="w-8 h-8 rounded-lg bg-accent/10 border border-accent/25 flex items-center justify-center text-accent">
                         <Mail className="w-4 h-4" />
                       </div>
                       <div>
@@ -274,10 +275,10 @@ export default function InteractiveConsole() {
                     href="https://www.linkedin.com/in/parvez-saifi-16940a361/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="flex items-center justify-between p-3 bg-background/50 border border-border/40 rounded-xl hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all group"
+                    className="flex items-center justify-between p-3 bg-background/50 border border-border/40 rounded-xl hover:border-accent/30 hover:bg-accent/5 transition-all group"
                   >
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-lg bg-indigo-500/10 border border-indigo-500/25 flex items-center justify-center text-indigo-400">
+                      <div className="w-8 h-8 rounded-lg bg-accent/10 border border-accent/25 flex items-center justify-center text-accent">
                         <Linkedin className="w-4 h-4" />
                       </div>
                       <div>
@@ -292,10 +293,10 @@ export default function InteractiveConsole() {
                     href="https://github.com/parvezs2442" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="flex items-center justify-between p-3 bg-background/50 border border-border/40 rounded-xl hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all group"
+                    className="flex items-center justify-between p-3 bg-background/50 border border-border/40 rounded-xl hover:border-accent/30 hover:bg-accent/5 transition-all group"
                   >
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-lg bg-indigo-500/10 border border-indigo-500/25 flex items-center justify-center text-indigo-400">
+                      <div className="w-8 h-8 rounded-lg bg-accent/10 border border-accent/25 flex items-center justify-center text-accent">
                         <Github className="w-4 h-4" />
                       </div>
                       <div>
@@ -308,10 +309,10 @@ export default function InteractiveConsole() {
 
                   <a 
                     href="tel:+919639052258" 
-                    className="flex items-center justify-between p-3 bg-background/50 border border-border/40 rounded-xl hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all group"
+                    className="flex items-center justify-between p-3 bg-background/50 border border-border/40 rounded-xl hover:border-accent/30 hover:bg-accent/5 transition-all group"
                   >
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-lg bg-indigo-500/10 border border-indigo-500/25 flex items-center justify-center text-indigo-400">
+                      <div className="w-8 h-8 rounded-lg bg-accent/10 border border-accent/25 flex items-center justify-center text-accent">
                         <Phone className="w-4 h-4" />
                       </div>
                       <div>

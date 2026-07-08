@@ -278,45 +278,40 @@ export default function CoreSkills() {
   const [activeCategory, setActiveCategory] = useState<string>(categories[0].id);
 
   return (
-    <section id="core-skills" className="w-full py-24 border-b border-border/40 relative overflow-hidden bg-background">
+    <section id="system-blueprint" className="w-full py-24 border-b border-border/40 relative overflow-hidden bg-background">
       {/* Soft Ambient Corner Glow */}
-      <div className="absolute top-0 right-0 w-80 h-80 bg-indigo-500/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl pointer-events-none" />
       
       <div className="max-w-6xl mx-auto px-4 relative">
         {/* Section Header */}
         <div className="mb-16">
-          <div className="inline-flex items-center gap-2 bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 rounded-full text-indigo-400 text-xs font-semibold font-mono mb-4 uppercase tracking-wider">
-            <Code2 className="w-3.5 h-3.5" /> Capabilities
+          <div className="flex items-center gap-4 mb-4">
+            <span className="text-xs font-mono font-bold text-accent tracking-widest uppercase">03 SKILLS</span>
+            <div className="h-px bg-border flex-grow" />
           </div>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white">
-            Core Capabilities
+            Tools I reach for
           </h2>
           <p className="text-muted-foreground/80 mt-4 text-base md:text-lg max-w-2xl leading-relaxed">
-            A comprehensive list of engineering capabilities. Hover or tap on any capability to load dynamic telemetry detailing production use cases and implementation details.
+            A comprehensive index of core languages, platforms, and methodologies. Hover or tap on any item to view its telemetry and project applications.
           </p>
         </div>
 
         {/* Core Layout Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Skill Groups (Left Column: 7-cols) */}
-          <div className="lg:col-span-7 space-y-6">
+          
+          {/* Skill Groups (Left Column: 7-cols grid of categories) */}
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {categories.map((cat) => (
               <div 
                 key={cat.id} 
-                className={`bg-card/45 border rounded-2xl p-5 md:p-6 transition-all duration-300 ${
-                  activeCategory === cat.id 
-                    ? "border-indigo-500/30 bg-card/65 shadow-[inset_0_1px_0_rgba(99,102,241,0.05)]" 
-                    : "border-border/80"
-                }`}
-                onMouseEnter={() => setActiveCategory(cat.id)}
+                className="bg-card border border-border rounded-xl p-5 hover:border-accent/15 transition-all duration-300"
               >
-                <div className="flex items-center gap-2.5 mb-4 text-white">
-                  <div className={`p-1.5 rounded-lg bg-background border ${
-                    activeCategory === cat.id ? "border-indigo-500/30 text-indigo-400" : "border-border/30 text-muted-foreground"
-                  } transition-colors`}>
+                <div className="flex items-center gap-2 mb-3 text-white">
+                  <div className="text-accent">
                     {cat.icon}
                   </div>
-                  <h3 className="text-sm font-semibold tracking-wide font-mono uppercase">{cat.name}</h3>
+                  <h3 className="text-xs font-bold font-mono tracking-widest uppercase">{cat.name}</h3>
                 </div>
 
                 <div className="flex gap-2 flex-wrap">
@@ -333,10 +328,10 @@ export default function CoreSkills() {
                           setActiveSkill(skill);
                           setActiveCategory(cat.id);
                         }}
-                        className={`px-3 py-1.5 text-xs font-mono rounded-lg border transition-all duration-150 ${
+                        className={`px-3 py-1.5 text-[11px] font-mono rounded-lg border transition-all duration-150 ${
                           isActive
-                            ? "bg-indigo-500/10 border-indigo-500/50 text-indigo-300 font-medium shadow-[0_0_12px_rgba(99,102,241,0.1)]"
-                            : "bg-background/40 border-border/40 text-muted-foreground hover:text-white hover:border-border/80"
+                            ? "bg-accent/10 border-accent text-accent font-medium shadow-glow"
+                            : "bg-background/45 border-border/40 text-muted-foreground hover:text-white hover:border-border/80"
                         }`}
                       >
                         {skill.name}
@@ -350,16 +345,16 @@ export default function CoreSkills() {
 
           {/* Telemetry Details Panel (Right Column: 5-cols) */}
           <div className="lg:col-span-5 lg:sticky lg:top-24">
-            <div className="bg-card/65 border border-border/80 rounded-2xl p-6 md:p-8 shadow-premium relative overflow-hidden select-none min-h-[420px] flex flex-col justify-between">
-              {/* Telemetry Header */}
+            <div className="bg-card border border-border rounded-2xl p-6 md:p-8 shadow-premium relative overflow-hidden select-none min-h-[380px] flex flex-col justify-between">
+              
               <div>
-                <div className="flex items-center justify-between pb-3 mb-6 border-b border-border/40 font-mono text-[10px] text-muted-foreground/80">
+                <div className="flex items-center justify-between pb-3 mb-6 border-b border-border/45 font-mono text-[10px] text-muted-foreground/80">
                   <span className="flex items-center gap-1.5">
-                    <Terminal className="w-4 h-4 text-indigo-400" />
+                    <Terminal className="w-4 h-4 text-accent" />
                     TELEMETRY_INSPECT.LOG
                   </span>
                   <span className="flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 bg-indigo-400 rounded-full animate-pulse" />
+                    <span className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse" />
                     SYSTEM_LINK
                   </span>
                 </div>
@@ -371,35 +366,35 @@ export default function CoreSkills() {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -10 }}
                     transition={{ duration: 0.2 }}
-                    className="space-y-6"
+                    className="space-y-5"
                   >
                     <div>
-                      <span className="text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-widest">
+                      <span className="text-[10px] font-mono text-accent font-bold uppercase tracking-widest">
                         Capability Name
                       </span>
-                      <h3 className="text-2xl font-bold text-white mt-1 tracking-tight">
+                      <h3 className="text-xl font-bold text-white mt-1 tracking-tight">
                         {activeSkill.name}
                       </h3>
                     </div>
 
                     <div>
-                      <span className="text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-widest">
+                      <span className="text-[10px] font-mono text-accent font-bold uppercase tracking-widest">
                         Production Use Case
                       </span>
-                      <p className="text-xs text-foreground/85 font-mono leading-relaxed mt-2 p-3 bg-background/55 border border-border/50 rounded-lg">
+                      <p className="text-xs text-foreground/85 font-mono leading-relaxed mt-2 p-3 bg-background/55 border border-border/60 rounded-lg">
                         {activeSkill.useCase}
                       </p>
                     </div>
 
                     <div>
-                      <span className="text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-widest">
+                      <span className="text-[10px] font-mono text-accent font-bold uppercase tracking-widest">
                         Applied in Projects
                       </span>
                       <div className="flex gap-2 mt-2 flex-wrap">
                         {activeSkill.projects.map((proj) => (
                           <span 
                             key={proj}
-                            className="text-[10px] font-mono text-white bg-indigo-500/10 border border-indigo-500/30 px-2 py-0.5 rounded-md"
+                            className="text-[9px] font-mono text-white bg-accent/10 border border-accent/30 px-2 py-0.5 rounded"
                           >
                             {proj}
                           </span>
@@ -408,7 +403,7 @@ export default function CoreSkills() {
                     </div>
 
                     <div>
-                      <span className="text-[10px] font-mono text-indigo-400 font-bold uppercase tracking-widest">
+                      <span className="text-[10px] font-mono text-accent font-bold uppercase tracking-widest">
                         Engineering Responsibility
                       </span>
                       <p className="text-xs text-muted-foreground leading-relaxed mt-1.5 font-sans">
@@ -420,12 +415,13 @@ export default function CoreSkills() {
               </div>
 
               {/* Informative Footer */}
-              <div className="mt-8 pt-4 border-t border-border/30 text-[10px] text-muted-foreground/60 font-mono flex items-center gap-1.5">
-                <Activity className="w-3.5 h-3.5 text-indigo-400" />
+              <div className="mt-8 pt-4 border-t border-border/40 text-[10px] text-muted-foreground/60 font-mono flex items-center gap-1.5">
+                <Activity className="w-3.5 h-3.5 text-accent" />
                 <span>Verified in production-level tests.</span>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

@@ -152,7 +152,7 @@ export default function CommandCenter() {
   });
 
   return (
-    <div className="w-full max-w-2xl mx-auto bg-card/65 backdrop-blur-xl border border-border/85 rounded-2xl overflow-hidden shadow-premium transition-all duration-300 hover:border-indigo-500/30">
+    <div className="w-full max-w-2xl mx-auto bg-card/65 backdrop-blur-xl border border-border/85 rounded-2xl overflow-hidden shadow-premium transition-all duration-300 hover:border-accent/30">
       {/* Top Search Bar */}
       <div className="flex items-center gap-3 px-4 py-4 border-b border-border/50">
         <Search className="w-5 h-5 text-muted-foreground/60 shrink-0" />
@@ -176,7 +176,7 @@ export default function CommandCenter() {
             onClick={() => setSelectedCategory(cat === "All" ? null : cat)}
             className={`px-3 py-1 rounded-full text-xs font-medium font-mono transition-colors shrink-0 ${
               (cat === "All" && !selectedCategory) || selectedCategory === cat
-                ? "bg-indigo-500/10 text-indigo-400 border border-indigo-500/20"
+                ? "bg-accent/10 text-accent border border-accent/20"
                 : "text-muted-foreground hover:text-foreground hover:bg-border/20 border border-transparent"
             }`}
           >
@@ -193,10 +193,10 @@ export default function CommandCenter() {
               <button
                 key={cmd.id}
                 onClick={cmd.action}
-                className="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-left transition-all duration-150 hover:bg-indigo-500/10 group"
+                className="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-left transition-all duration-150 hover:bg-accent/10 group"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-7 h-7 rounded-md bg-border/40 flex items-center justify-center text-muted-foreground group-hover:text-indigo-400 group-hover:bg-indigo-500/10 transition-colors">
+                  <div className="w-7 h-7 rounded-md bg-border/40 flex items-center justify-center text-muted-foreground group-hover:text-accent group-hover:bg-accent/10 transition-colors">
                     {cmd.icon}
                   </div>
                   <div>
@@ -209,7 +209,7 @@ export default function CommandCenter() {
                   </div>
                 </div>
                 {cmd.shortcut && (
-                  <span className="text-[10px] font-mono text-muted-foreground/60 bg-border/20 group-hover:bg-indigo-500/15 group-hover:text-indigo-300 px-1.5 py-0.5 rounded border border-border/30 transition-colors">
+                  <span className="text-[10px] font-mono text-muted-foreground/60 bg-border/20 group-hover:bg-accent/15 group-hover:text-accent px-1.5 py-0.5 rounded border border-border/30 transition-colors">
                     {cmd.shortcut}
                   </span>
                 )}
@@ -227,7 +227,7 @@ export default function CommandCenter() {
           <div>
             <div className="flex items-center justify-between pb-2 mb-2 border-b border-border/40 text-[10px] text-muted-foreground">
               <span className="flex items-center gap-1">
-                <Terminal className="w-3.5 h-3.5 text-indigo-400" />
+                <Terminal className="w-3.5 h-3.5 text-accent" />
                 CONSOLE.LOG
               </span>
               {isRunningDiagnostics && (
@@ -242,7 +242,7 @@ export default function CommandCenter() {
                     key={index}
                     className={`${
                       log.includes("[OK]") || log.includes("[SECURE]") || log.includes("[100% SUCCESS]") || log.includes("──>")
-                        ? "text-indigo-300"
+                        ? "text-accent"
                         : log.includes("operating")
                         ? "text-emerald-400 font-bold"
                         : "text-muted-foreground"
@@ -255,11 +255,11 @@ export default function CommandCenter() {
               </div>
             ) : (
               <div className="flex flex-col items-center justify-center h-[140px] text-center text-muted-foreground/75">
-                <Sparkles className="w-5 h-5 mb-2 text-indigo-500/30" />
+                <Sparkles className="w-5 h-5 mb-2 text-accent/30" />
                 <p>Run standard diagnostics to review microservice orchestration, token schemas, and container metrics.</p>
                 <button
                   onClick={runDiagnostics}
-                  className="mt-3 px-3 py-1 bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 rounded-md hover:bg-indigo-500/20 text-xs transition-colors flex items-center gap-1.5"
+                  className="mt-3 px-3 py-1 bg-accent/10 border border-accent/20 text-accent rounded-md hover:bg-accent/20 text-xs transition-colors flex items-center gap-1.5"
                 >
                   <Cpu className="w-3.5 h-3.5" /> Execute Audit
                 </button>
