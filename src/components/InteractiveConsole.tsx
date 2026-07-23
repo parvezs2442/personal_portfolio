@@ -77,9 +77,9 @@ export default function InteractiveConsole() {
         setLogs(prev => [
           ...prev,
           { text: "Candidate Profile: Parvez Saifi", type: "output" },
-          { text: "Role: Full Stack Engineer & Systems Architect (B.Tech IT 2026)", type: "output" },
+          { text: "Role: Full Stack & Generative AI Developer (B.Tech IT 2026)", type: "output" },
           { text: "Status: Open to Full-Time Roles, Internships, Freelance, & Open Source Collaboration", type: "output" },
-          { text: "Summary: Specializes in React/Next.js client systems and secure, backend integrations via Node.js/Express APIs. Experienced with Socket.io clusters, stateless JWT session safety (refresh token rotation), and containerization (Docker, AWS ECS). Driven by computer science fundamentals.", type: "output" }
+          { text: "Summary: Specializes in React/Next.js client systems, secure backend integrations, and Generative AI systems (LangChain, LangGraph, RAG). Experienced with FastAPI/Python, Socket.io clusters, stateless JWT session safety, Qdrant vector databases, and containerization (Docker, AWS ECS).", type: "output" }
         ]);
         break;
 
@@ -88,8 +88,9 @@ export default function InteractiveConsole() {
           ...prev,
           { text: "Core Stack Metrics:", type: "output" },
           { text: "  Frontend: React.js, Next.js, TypeScript, Redux Toolkit, Tailwind CSS", type: "output" },
-          { text: "  Backend: Node.js, Express.js, REST APIs, Socket.io WebSockets", type: "output" },
-          { text: "  Databases: PostgreSQL, MongoDB, MySQL, Prisma ORM", type: "output" },
+          { text: "  Backend: Node.js, Express.js, FastAPI (Python), REST APIs, Socket.io WebSockets", type: "output" },
+          { text: "  Generative AI: LangChain, LangGraph, RAG, Prompt Engineering, AI Agents, Embeddings", type: "output" },
+          { text: "  Databases: PostgreSQL, MongoDB, MySQL, Qdrant Vector DB, Prisma ORM", type: "output" },
           { text: "  DevOps: Docker, Docker Compose, AWS ECS, Amazon ECR, Git", type: "output" },
           { text: "  Security: JWT (HTTP-Only cookies, token rotation), RBAC, Zod validation", type: "output" }
         ]);
@@ -98,10 +99,11 @@ export default function InteractiveConsole() {
       case "projects":
         setLogs(prev => [
           ...prev,
-          { text: "Shipped Portfolio Trilogy:", type: "output" },
+          { text: "Shipped Portfolio Projects:", type: "output" },
           { text: "  1. ResumePilot - AI ATS recruitment scanner (MERN, Gemini API, Puppeteer).", type: "output" },
-          { text: "  2. CodeSync    - Collaborative IDE sync room (WebSockets, Monaco Editor, Docker, AWS).", type: "output" },
-          { text: "  3. TrackHire   - Job Tracking SaaS dashboard (Next.js, TypeScript, PostgreSQL, Prisma).", type: "output" }
+          { text: "  2. AI SQL Assistant - Natural Language DB assistant (Python, FastAPI, LangChain, RAG, Qdrant).", type: "output" },
+          { text: "  3. CodeSync    - Collaborative IDE sync room (WebSockets, Monaco Editor, Docker, AWS).", type: "output" },
+          { text: "  4. TrackHire   - Job Tracking SaaS dashboard (Next.js, TypeScript, PostgreSQL, Prisma).", type: "output" }
         ]);
         break;
 

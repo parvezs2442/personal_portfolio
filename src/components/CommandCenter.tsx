@@ -46,10 +46,11 @@ export default function CommandCenter() {
       "Verifying database indexes for PostgreSQL & MongoDB... [OPTIMIZED]",
       "Testing Socket.io bidirectional connection latency... [14ms]",
       "Validating Gemini AI resume analyzer parser pipeline... [100% SUCCESS]",
-      "Checking container health: 3 services active.",
+      "Checking container health: 4 services active.",
       "TrackHire (Next.js/PostgreSQL) ──> Online",
       "CodeSync (Docker/Express/WebSockets) ──> Online",
       "ResumePilot (MERN/Gemini AI) ──> Online",
+      "AI SQL Assistant (FastAPI/LangChain/LangGraph) ──> Online",
       "Diagnostics completed. All systems operating at production-grade efficiency."
     ];
 
@@ -91,7 +92,7 @@ export default function CommandCenter() {
     {
       id: "nav-projects",
       title: "View Shipped Products",
-      subtitle: "Explore ResumePilot, CodeSync, and TrackHire",
+      subtitle: "Explore ResumePilot, AI SQL Assistant, CodeSync, and TrackHire",
       category: "Navigation",
       shortcut: "G P",
       icon: <Code2 className="w-4 h-4" />,
@@ -122,7 +123,7 @@ export default function CommandCenter() {
       category: "Action",
       shortcut: "⌘ D",
       icon: <ShieldCheck className="w-4 h-4" />,
-      action: () => window.open("mailto:parvezsaifi2258@gmail.com?subject=Resume Request")
+      action: () => window.open("/resume.pdf", "_blank")
     },
     {
       id: "action-linkedin",

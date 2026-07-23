@@ -70,6 +70,44 @@ export default function ProjectShowcase() {
       ]
     },
     {
+      id: "aisqlassistant",
+      name: "AI SQL Assistant",
+      tagline: "Natural Language Database Assistant",
+      impactBadge: "Conversational Relational Query Interface",
+      problem: "Non-technical business stakeholders struggle to query relational databases directly, resulting in delays when waiting for developers or data analysts to write custom SQL scripts.",
+      challenge: "Building a RAG pipeline with high context accuracy that extracts database schemas, embeds structure, searches vector databases, and executes secure SQL queries without LLM hallucinations.",
+      solution: "Engineered a conversational AI assistant using Python, FastAPI, LangChain, and LangGraph. It converts natural language queries into accurate SQL, runs them securely, and returns human-readable responses.",
+      techStack: ["Python", "FastAPI", "LangChain", "LangGraph", "Gemini API", "RAG", "Embeddings", "Vector Database", "SQL"],
+      githubUrl: "https://github.com/parvezs2442/ai-sql-assistant",
+      liveUrl: undefined,
+      architectureNodes: {
+        frontend: ["Dynamic CLI Console", "Response stream viewer", "Interactive schema visualizer"],
+        backend: ["FastAPI Application Server", "LangChain Reasoning Engine", "LangGraph Agent Workflow Router"],
+        database: ["Qdrant Vector DB", "PostgreSQL / MySQL Schema Store"],
+        special: ["RAG Context Extraction Pipeline", "Secured DB Execution Gateway"]
+      },
+      features: [
+        "Natural Language to SQL: Translates complex user questions into robust SQL commands dynamically.",
+        "LangGraph State Flow: Agentic workflow system directing validation, verification, and output rendering.",
+        "Qdrant Schema RAG: Retrieves database schema maps and constraint structures via vector embeddings.",
+        "Secure Sandbox Execution: Queries relational databases safely inside structured isolation layers."
+      ],
+      engineeringDecisions: [
+        {
+          title: "Multi-Agent Graph Workflows",
+          text: "Utilized LangGraph to construct a stateful multi-agent system. The workspace defines a workflow graph where one node validates inputs, another searches schema embeddings, a third compiles SQL, and a fourth verifies execution results, ensuring self-correcting loops."
+        },
+        {
+          title: "Context-Aware Schema RAG",
+          text: "Instead of injecting the entire database schema into the LLM prompt (which blows up token budgets and causes confusion), I built a semantic schema-lookup. Schema tables and schemas are stored in a Qdrant vector database, enabling precise RAG retrieval of only relevant columns and joins."
+        },
+        {
+          title: "Sanitized Sandbox Execution Guard",
+          text: "To mitigate injection risks, the FastAPI backend routes generated queries through a read-only sandboxed schema container. It parses commands for unsafe drop or update statements before executing, returning user-friendly data visualizations."
+        }
+      ]
+    },
+    {
       id: "codesync",
       name: "CodeSync",
       tagline: "Real-Time Collaborative Coding IDE & Execution Sandbox",

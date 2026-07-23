@@ -46,6 +46,18 @@ export default function GithubHub() {
 
   const pinnedRepos: PinnedRepo[] = [
     {
+      name: "ai-sql-assistant",
+      description: "Generative AI conversational assistant executing SQL queries against relational databases from natural language questions using RAG, LangChain, and LangGraph.",
+      language: "Python",
+      langColor: "bg-blue-600",
+      stars: 5,
+      forks: 2,
+      url: "https://github.com/parvezs2442/ai-sql-assistant",
+      problem: "Access barriers for non-technical users requesting relational database analytics.",
+      tech: "Python FastAPI, LangChain chains, LangGraph multi-agent paths, Qdrant vectors, relational query validation.",
+      whyMatters: "Validates agentic reasoning, vector embedding search indexing, conversational AI flow state models, and safe query execution controls."
+    },
+    {
       name: "Job_Tracker",
       description: "Full-stack SaaS application for tracking job application channels, interview stages, and analytical dashboard. Powered by Next.js & PostgreSQL.",
       language: "TypeScript",

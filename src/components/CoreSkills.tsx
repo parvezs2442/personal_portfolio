@@ -99,6 +99,12 @@ export default function CoreSkills() {
           responsibility: "Configured API routers guarded by rate limiters, validation layers, and authentication controls."
         },
         {
+          name: "FastAPI",
+          projects: ["AI SQL Assistant"],
+          useCase: "Designing high-performance, asynchronous REST APIs with auto-generated OpenAPI documentation.",
+          responsibility: "Built Python web backends serving AI pipelines and RAG routes with Pydantic validations."
+        },
+        {
           name: "REST APIs",
           projects: ["ResumePilot", "CodeSync", "TrackHire"],
           useCase: "Symmetric HTTP contract architecture defining JSON parameters, URL query schemes, and status responses.",
@@ -115,6 +121,61 @@ export default function CoreSkills() {
           projects: ["CodeSync"],
           useCase: "Low-overhead, persistent socket connectivity transmitting delta updates below 20ms.",
           responsibility: "Programmed frame validation checks and client ping-pong loops to track client disconnects."
+        }
+      ]
+    },
+    {
+      id: "generative-ai",
+      name: "Generative AI",
+      icon: <Sparkles className="w-4 h-4" />,
+      skills: [
+        {
+          name: "LangChain",
+          projects: ["AI SQL Assistant"],
+          useCase: "Orchestrating multi-step LLM workflows and chaining prompts together for structured reasoning.",
+          responsibility: "Developed structured query pipelines integrating OpenAI/Gemini models and managing system prompts."
+        },
+        {
+          name: "LangGraph",
+          projects: ["AI SQL Assistant"],
+          useCase: "Building stateful, multi-agent AI systems with cycles and conversational routing.",
+          responsibility: "Authored graph-based workflow handlers to route user queries based on verification states."
+        },
+        {
+          name: "RAG",
+          projects: ["AI SQL Assistant"],
+          useCase: "Retrieval-Augmented Generation to ground AI responses in custom, verified business schemas.",
+          responsibility: "Engineered document loading, chunking, embedding, and vector-search queries to inject context dynamically."
+        },
+        {
+          name: "Prompt Engineering",
+          projects: ["ResumePilot", "AI SQL Assistant"],
+          useCase: "Crafting structured, deterministic instructions to align LLM behaviors and JSON outputs.",
+          responsibility: "Designed system prompts with zero-shot, few-shot examples, and strict output constraint checks."
+        },
+        {
+          name: "AI Agents",
+          projects: ["AI SQL Assistant"],
+          useCase: "Autonomous decision-making loops executing tool actions and querying databases dynamically.",
+          responsibility: "Engineered tool calling pipelines allowing the LLM to write and run queries with safeguards."
+        },
+        {
+          name: "Embeddings",
+          projects: ["AI SQL Assistant"],
+          useCase: "Generating high-dimensional semantic vectors of unstructured text for database query lookups.",
+          responsibility: "Configured API utility pipelines translating text queries into token vectors in under 150ms."
+        },
+        {
+          name: "Vector DBs (Qdrant)",
+          projects: ["AI SQL Assistant"],
+          useCase: "High-speed indexed vector storage facilitating similarity searches on semantic document subsets.",
+          responsibility: "Designed collection index rules and performed similarity search queries on active session schemas."
+        },
+        {
+          name: "LLM Integration",
+          projects: ["ResumePilot", "AI SQL Assistant"],
+          useCase: "Direct REST/SDK integration with Gemini API and other models for structured response payloads.",
+          responsibility: "Implemented client SDK endpoints handling streaming responses and API retry logic."
         }
       ]
     },

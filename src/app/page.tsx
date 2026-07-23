@@ -35,7 +35,9 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-3">
             <a
-              href="mailto:parvezsaifi2258@gmail.com?subject=Resume Request"
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 bg-accent text-accent-foreground px-3.5 py-1.5 rounded-full text-[10px] font-mono font-bold hover:bg-accent/90 transition-all shadow-glow"
             >
               <Download className="w-3 h-3" /> DOWNLOAD RESUME
@@ -55,11 +57,11 @@ export default function Home() {
           <div className="flex-1 flex flex-col items-start text-left">
             <div className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 px-3 py-1 rounded-full text-accent text-xs font-semibold font-mono mb-6 uppercase tracking-wider">
               <span className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse" />
-              Full Stack Engineer
+              Full Stack & Generative AI Developer
             </div>
             
             <div className="text-[10px] font-bold font-mono tracking-widest text-accent mb-3 uppercase">
-              Full Stack Engineer · Greater Noida, India
+              Full Stack & Generative AI Developer · New Delhi, India
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight mb-4">
@@ -67,7 +69,7 @@ export default function Home() {
             </h1>
 
             <p className="text-muted-foreground max-w-xl text-sm sm:text-base leading-relaxed mb-8">
-              Hi, I&apos;m Parvez Saifi. I build production-grade full-stack applications using React, Next.js, Node.js, PostgreSQL, Docker, and AWS. I focus on developing secure backend systems, optimizing database queries, and creating scalable software that solves real-world problems.
+              Hi, I&apos;m Parvez Saifi. I build production-grade full-stack and Generative AI applications using React, Next.js, Node.js, Express.js, TypeScript, and Python. I specialize in developing intelligent, AI-powered systems (using LangChain, LangGraph, RAG, and Vector Databases like Qdrant), designing secure REST APIs, and building scalable software.
             </p>
 
             {/* Action Buttons */}
