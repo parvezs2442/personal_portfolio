@@ -77,9 +77,9 @@ export default function InteractiveConsole() {
         setLogs(prev => [
           ...prev,
           { text: "Candidate Profile: Parvez Saifi", type: "output" },
-          { text: "Role: Full Stack & Generative AI Developer (B.Tech IT 2026)", type: "output" },
+          { text: "Role: Full Stack Developer & AI / Generative AI Developer (B.Tech IT 2026)", type: "output" },
           { text: "Status: Open to Full-Time Roles, Internships, Freelance, & Open Source Collaboration", type: "output" },
-          { text: "Summary: Specializes in React/Next.js client systems, secure backend integrations, and Generative AI systems (LangChain, LangGraph, RAG). Experienced with FastAPI/Python, Socket.io clusters, stateless JWT session safety, Qdrant vector databases, and containerization (Docker, AWS ECS).", type: "output" }
+          { text: "Summary: Specializes in React/Next.js client architectures, secure backend APIs (Node.js, Express, FastAPI, Python), and Generative AI systems (LangChain, LangGraph, RAG, MCP). Built enterprise RAG systems with 92% citation accuracy, autonomous agent workflows with human-in-the-loop approvals, vector databases (Qdrant, ChromaDB), and microservices containerized with Docker on AWS (EC2, S3, ECS, ECR).", type: "output" }
         ]);
         break;
 
@@ -87,33 +87,41 @@ export default function InteractiveConsole() {
         setLogs(prev => [
           ...prev,
           { text: "Core Stack Metrics:", type: "output" },
-          { text: "  Frontend: React.js, Next.js, TypeScript, Redux Toolkit, Tailwind CSS", type: "output" },
-          { text: "  Backend: Node.js, Express.js, FastAPI (Python), REST APIs, Socket.io WebSockets", type: "output" },
-          { text: "  Generative AI: LangChain, LangGraph, RAG, Prompt Engineering, AI Agents, Embeddings", type: "output" },
-          { text: "  Databases: PostgreSQL, MongoDB, MySQL, Qdrant Vector DB, Prisma ORM", type: "output" },
-          { text: "  DevOps: Docker, Docker Compose, AWS ECS, Amazon ECR, Git", type: "output" },
-          { text: "  Security: JWT (HTTP-Only cookies, token rotation), RBAC, Zod validation", type: "output" }
+          { text: "  Languages: JavaScript (ES6+), TypeScript, Python, SQL", type: "output" },
+          { text: "  Frontend: React.js, Next.js, Redux Toolkit, Tailwind CSS", type: "output" },
+          { text: "  Backend & APIs: Node.js, Express.js, FastAPI, RESTful APIs, Microservices, JWT, RBAC, OAuth", type: "output" },
+          { text: "  Databases: PostgreSQL, MongoDB, Prisma, Redis, Schema Design, Indexing", type: "output" },
+          { text: "  Generative AI & LLMs: RAG, LangChain, LangGraph, Model Context Protocol (MCP), AI Agents, Prompt Engineering, Vector DBs (Qdrant, ChromaDB)", type: "output" },
+          { text: "  Cloud & DevOps: Docker, AWS (EC2, S3, ECS, ECR), CI/CD (GitHub Actions), Git, GitHub", type: "output" },
+          { text: "  AI-Assisted Tools: GitHub Copilot, ChatGPT, Claude", type: "output" }
         ]);
         break;
 
       case "projects":
         setLogs(prev => [
           ...prev,
-          { text: "Shipped Portfolio Projects:", type: "output" },
-          { text: "  1. ResumePilot - AI ATS recruitment scanner (MERN, Gemini API, Puppeteer).", type: "output" },
-          { text: "  2. AI SQL Assistant - Natural Language DB assistant (Python, FastAPI, LangChain, RAG, Qdrant).", type: "output" },
-          { text: "  3. CodeSync    - Collaborative IDE sync room (WebSockets, Monaco Editor, Docker, AWS).", type: "output" },
-          { text: "  4. TrackHire   - Job Tracking SaaS dashboard (Next.js, TypeScript, PostgreSQL, Prisma).", type: "output" }
+          { text: "Shipped Portfolio Projects (Newest First):", type: "output" },
+          { text: "  1. Enterprise RAG Assistant - Python, FastAPI, LangChain, Qdrant, PostgreSQL (92% citation accuracy, 82% Recall@5).", type: "output" },
+          { text: "  2. AI Agent Automation Platform - LangGraph orchestration, MCP tools, human-in-the-loop (80% task completion).", type: "output" },
+          { text: "  3. AI-Powered Meeting Intelligence Assistant - Next.js, Whisper & Sarvam AI STT, Mistral AI, ChromaDB RAG.", type: "output" },
+          { text: "  4. Multi-Agent AI Interview Platform - LangGraph orchestration, Express microservices, Docker, AWS ECS.", type: "output" },
+          { text: "  5. ResumePilot - AI ATS recruitment scanner (MERN, Gemini API, Puppeteer).", type: "output" },
+          { text: "  6. CodeSync - Collaborative IDE sync room (WebSockets, Monaco Editor, Docker, AWS).", type: "output" },
+          { text: "  7. TrackHire - Job Tracking SaaS dashboard (Next.js, TypeScript, PostgreSQL, Prisma).", type: "output" },
+          { text: "  8. AI SQL Assistant - Natural Language DB assistant (Python, FastAPI, LangChain, LangGraph, Qdrant).", type: "output" },
+          { text: "  9. LedgerX - Digital Wallet & Transaction processing platform (Node.js, Express, MongoDB).", type: "output" }
         ]);
         break;
 
       case "socials":
         setLogs(prev => [
           ...prev,
-          { text: "Social Endpoints:", type: "output" },
-          { text: "  LinkedIn: linkedin.com/in/parvez-saifi-16940a361", type: "output" },
+          { text: "Social & Contact Endpoints:", type: "output" },
+          { text: "  LinkedIn: linkedin.com/in/parvezsaifi", type: "output" },
           { text: "  GitHub: github.com/parvezs2442", type: "output" },
-          { text: "  Email: parvezsaifi2258@gmail.com", type: "output" }
+          { text: "  Email: parvezsaifi2258@gmail.com", type: "output" },
+          { text: "  Portfolio: parvezsaifi.vercel.app", type: "output" },
+          { text: "  Phone: +91 9639052258", type: "output" }
         ]);
         break;
 
@@ -274,7 +282,7 @@ export default function InteractiveConsole() {
                   </a>
 
                   <a 
-                    href="https://www.linkedin.com/in/parvez-saifi-16940a361/" 
+                    href="https://www.linkedin.com/in/parvezsaifi/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="flex items-center justify-between p-3 bg-background/50 border border-border/40 rounded-xl hover:border-accent/30 hover:bg-accent/5 transition-all group"
@@ -285,7 +293,7 @@ export default function InteractiveConsole() {
                       </div>
                       <div>
                         <div className="text-[11px] font-mono text-muted-foreground">LINKEDIN PROFILE</div>
-                        <div className="text-xs font-semibold text-white mt-0.5">linkedin.com/in/parvez-saifi-16940a361</div>
+                        <div className="text-xs font-semibold text-white mt-0.5">linkedin.com/in/parvezsaifi</div>
                       </div>
                     </div>
                     <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-white transition-colors" />
@@ -304,6 +312,24 @@ export default function InteractiveConsole() {
                       <div>
                         <div className="text-[11px] font-mono text-muted-foreground">GITHUB WORKSPACE</div>
                         <div className="text-xs font-semibold text-white mt-0.5">github.com/parvezs2442</div>
+                      </div>
+                    </div>
+                    <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-white transition-colors" />
+                  </a>
+
+                  <a 
+                    href="https://parvezsaifi.vercel.app" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex items-center justify-between p-3 bg-background/50 border border-border/40 rounded-xl hover:border-accent/30 hover:bg-accent/5 transition-all group"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-accent/10 border border-accent/25 flex items-center justify-center text-accent">
+                        <Sparkles className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <div className="text-[11px] font-mono text-muted-foreground">PRODUCTION DOMAIN</div>
+                        <div className="text-xs font-semibold text-white mt-0.5">parvezsaifi.vercel.app</div>
                       </div>
                     </div>
                     <ArrowUpRight className="w-4 h-4 text-muted-foreground group-hover:text-white transition-colors" />

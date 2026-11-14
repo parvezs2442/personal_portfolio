@@ -69,7 +69,7 @@ export default function Home() {
             </h1>
 
             <p className="text-muted-foreground max-w-xl text-sm sm:text-base leading-relaxed mb-8">
-              Hi, I&apos;m Parvez Saifi. I build production-grade full-stack and Generative AI applications using React, Next.js, Node.js, Express.js, TypeScript, and Python. I specialize in developing intelligent, AI-powered systems (using LangChain, LangGraph, RAG, and Vector Databases like Qdrant), designing secure REST APIs, and building scalable software.
+              Hi, I&apos;m Parvez Saifi. I am a Full Stack Developer and AI &amp; Generative AI Developer with a B.Tech in Information Technology (2026), skilled in React.js, Next.js, TypeScript, Node.js, Express.js, Python, and FastAPI. I build REST APIs, database-driven applications, and LLM-powered systems using Retrieval-Augmented Generation (RAG), LangChain, LangGraph, and Prompt Engineering — including an enterprise RAG assistant with 92% citation accuracy. Experienced with Microservices, System Design, AWS, Docker, CI/CD, and Model Context Protocol (MCP).
             </p>
 
             {/* Action Buttons */}
@@ -89,7 +89,7 @@ export default function Home() {
                 <Github className="w-3.5 h-3.5" /> GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/parvez-saifi-16940a361/"
+                href="https://www.linkedin.com/in/parvezsaifi/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 border border-border/80 bg-card/40 text-muted-foreground hover:text-white px-4 py-2 rounded-lg text-xs font-semibold transition-all font-sans"
@@ -154,6 +154,19 @@ export default function Home() {
                   <div className="relative">
                     <span className="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-background border border-accent shadow-[0_0_8px_rgba(10,219,181,0.4)]" />
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs font-mono text-muted-foreground mb-1.5">
+                      <span className="font-semibold text-accent">Enterprise RAG &amp; AI Agent Platforms</span>
+                      <span>2026 - PRESENT</span>
+                    </div>
+                    <h4 className="text-sm font-bold text-white">Generative AI &amp; Full Stack Systems Developer</h4>
+                    <p className="text-xs text-muted-foreground/80 mt-2 leading-relaxed">
+                      Engineered enterprise RAG systems using Python, FastAPI, LangChain, Qdrant, and PostgreSQL with Hybrid Retrieval (BM25 + Vector Search), RRF reranking, and hallucination guardrails (92% citation accuracy). Architected full-stack AI Agent automation platforms with LangGraph orchestration, MCP tool calling, and human-in-the-loop approvals.
+                    </p>
+                  </div>
+
+                  {/* Item 2 */}
+                  <div className="relative">
+                    <span className="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-background border border-accent shadow-[0_0_8px_rgba(10,219,181,0.4)]" />
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs font-mono text-muted-foreground mb-1.5">
                       <span className="font-semibold text-accent">CodeSync (Collaborative Sandbox)</span>
                       <span>2026 - PRESENT (7 MOS)</span>
                     </div>
@@ -163,7 +176,7 @@ export default function Home() {
                     </p>
                   </div>
 
-                  {/* Item 2 */}
+                  {/* Item 3 */}
                   <div className="relative">
                     <span className="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-background border border-accent shadow-[0_0_8px_rgba(10,219,181,0.4)]" />
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs font-mono text-muted-foreground mb-1.5">
@@ -194,19 +207,19 @@ export default function Home() {
                   <div className="relative">
                     <span className="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-background border border-accent shadow-[0_0_8px_rgba(10,219,181,0.4)]" />
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-xs font-mono text-muted-foreground mb-1.5">
-                      <span className="font-semibold text-accent">Sharda University, Greater Noida</span>
+                      <span className="font-semibold text-accent">Sharda University, Greater Noida, India</span>
                       <span>CLASS OF 2026</span>
                     </div>
                     <h4 className="text-sm font-bold text-white">B.Tech in Information Technology</h4>
                     <p className="text-xs text-muted-foreground/80 mt-2 leading-relaxed">
-                      Applying core computer science fundamentals directly to real-world codebases. Academic tracking at <strong>76%</strong> with research-level focus on database normalization, system topology, and algorithmic complexity limits.
+                      Applying core computer science fundamentals directly to real-world codebases. Academic tracking at <strong>76%</strong> with focus on algorithms, database design, system topology, and AI engineering.
                     </p>
                     
                     <div className="mt-4 grid grid-cols-2 gap-2 text-[10px] font-mono">
-                      <div className="bg-background/80 px-2.5 py-1 rounded border border-border/60 text-muted-foreground">Data Structures & Algo</div>
-                      <div className="bg-background/80 px-2.5 py-1 rounded border border-border/60 text-muted-foreground">Database Management</div>
-                      <div className="bg-background/80 px-2.5 py-1 rounded border border-border/60 text-muted-foreground">Distributed Systems</div>
-                      <div className="bg-background/80 px-2.5 py-1 rounded border border-border/60 text-muted-foreground">Object-Oriented Design</div>
+                      <div className="bg-background/80 px-2.5 py-1 rounded border border-border/60 text-muted-foreground">Data Structures &amp; Algo</div>
+                      <div className="bg-background/80 px-2.5 py-1 rounded border border-border/60 text-muted-foreground">Object-Oriented Design (OOP)</div>
+                      <div className="bg-background/80 px-2.5 py-1 rounded border border-border/60 text-muted-foreground">System Design</div>
+                      <div className="bg-background/80 px-2.5 py-1 rounded border border-border/60 text-muted-foreground">SQL &amp; DBMS</div>
                     </div>
                   </div>
                 </div>
@@ -238,7 +251,7 @@ export default function Home() {
             <span>Handcrafted by design agency standards. Built in Next.js.</span>
           </div>
           <div className="flex items-center gap-4">
-            <a href="https://www.linkedin.com/in/parvez-saifi-16940a361/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">LINKEDIN</a>
+            <a href="https://www.linkedin.com/in/parvezsaifi/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">LINKEDIN</a>
             <a href="https://github.com/parvezs2442" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">GITHUB</a>
             <a href="mailto:parvezsaifi2258@gmail.com" className="hover:text-accent transition-colors">EMAIL</a>
           </div>

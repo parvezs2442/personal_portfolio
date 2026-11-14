@@ -39,37 +39,37 @@ export default function CoreSkills() {
       skills: [
         {
           name: "React.js",
-          projects: ["ResumePilot", "CodeSync"],
+          projects: ["AI Agent Automation Platform", "ResumePilot", "CodeSync"],
           useCase: "Building highly interactive SPA architectures with optimized virtualized states.",
           responsibility: "Developed custom hooks, managed responsive layout trees, and reduced initial page render cycles."
         },
         {
           name: "Next.js",
-          projects: ["TrackHire"],
+          projects: ["Enterprise RAG Assistant", "AI-Powered Meeting Intelligence Assistant", "TrackHire"],
           useCase: "Server-side rendering (SSR), dynamic App Router pathways, and search indexing optimization.",
           responsibility: "Integrated server actions and layouts to bypass client fetching and ensure secure rendering."
         },
         {
           name: "TypeScript",
-          projects: ["TrackHire", "LabourTech"],
+          projects: ["Enterprise RAG Assistant", "TrackHire", "LabourTech"],
           useCase: "Strict type mapping across database clients, API requests, and frontend states.",
           responsibility: "Eliminated compilation errors, engineered modular schemas, and defined request/response interfaces."
         },
         {
-          name: "JavaScript",
+          name: "JavaScript (ES6+)",
           projects: ["ResumePilot", "CodeSync"],
           useCase: "Asynchronous runtime loops, dynamic element injection, and standard Web API integration.",
           responsibility: "Scripted websocket payload event listeners, file reader buffers, and client fallback logic."
         },
         {
           name: "Redux Toolkit",
-          projects: ["TrackHire"],
-          useCase: "Centralized client cache, persistent configurations, and predictable state slices.",
-          responsibility: "Configured store dispatch pipelines to sync Kanban board dragging events with DB commits."
+          projects: ["AI Agent Automation Platform", "TrackHire"],
+          useCase: "Centralized client store, persistent caching, and deterministic workflow state slices.",
+          responsibility: "Configured store dispatch pipelines to sync Kanban board dragging events and agent builder states."
         },
         {
           name: "Tailwind CSS",
-          projects: ["ResumePilot", "CodeSync", "TrackHire"],
+          projects: ["Enterprise RAG Assistant", "AI Agent Automation Platform", "TrackHire"],
           useCase: "Responsive utility layout structuring, theme-adaptive design systems, and glassmorphism styling.",
           responsibility: "Formulated global color maps and border animation classes matching premium agency designs."
         },
@@ -88,27 +88,39 @@ export default function CoreSkills() {
       skills: [
         {
           name: "Node.js",
-          projects: ["ResumePilot", "CodeSync"],
+          projects: ["AI Agent Automation Platform", "ResumePilot", "CodeSync"],
           useCase: "Event-driven, asynchronous server backend handling intensive file streams and persistent networks.",
           responsibility: "Built API endpoints processing large multi-part resume file uploads without thread blockage."
         },
         {
           name: "Express.js",
-          projects: ["ResumePilot", "CodeSync"],
+          projects: ["AI Agent Automation Platform", "ResumePilot", "CodeSync"],
           useCase: "Modular REST routing structure, middleware pipelines, CORS guards, and HTTP payload parsers.",
           responsibility: "Configured API routers guarded by rate limiters, validation layers, and authentication controls."
         },
         {
           name: "FastAPI",
-          projects: ["AI SQL Assistant"],
+          projects: ["Enterprise RAG Assistant", "AI-Powered Meeting Intelligence Assistant", "AI SQL Assistant"],
           useCase: "Designing high-performance, asynchronous REST APIs with auto-generated OpenAPI documentation.",
           responsibility: "Built Python web backends serving AI pipelines and RAG routes with Pydantic validations."
         },
         {
           name: "REST APIs",
-          projects: ["ResumePilot", "CodeSync", "TrackHire"],
+          projects: ["Enterprise RAG Assistant", "ResumePilot", "CodeSync", "TrackHire"],
           useCase: "Symmetric HTTP contract architecture defining JSON parameters, URL query schemes, and status responses.",
           responsibility: "Built REST interfaces yielding predictable nested data models for complex client requests."
+        },
+        {
+          name: "Microservices",
+          projects: ["Multi-Agent AI Interview Platform", "CodeSync"],
+          useCase: "Decoupled distributed service architecture separating auth, WebSockets, and AI agent workloads.",
+          responsibility: "Designed isolated microservice topologies deployed with independent Docker containers on AWS."
+        },
+        {
+          name: "OAuth",
+          projects: ["ResumePilot", "TrackHire"],
+          useCase: "Delegated identity authorization and token-gated social authentication flows.",
+          responsibility: "Engineered secure OAuth 2.0 integration with JWT session minting and refresh token rotation."
         },
         {
           name: "Socket.io",
@@ -131,51 +143,63 @@ export default function CoreSkills() {
       skills: [
         {
           name: "LangChain",
-          projects: ["AI SQL Assistant"],
+          projects: ["Enterprise RAG Assistant", "AI Agent Automation Platform", "AI-Powered Meeting Intelligence Assistant", "AI SQL Assistant"],
           useCase: "Orchestrating multi-step LLM workflows and chaining prompts together for structured reasoning.",
-          responsibility: "Developed structured query pipelines integrating OpenAI/Gemini models and managing system prompts."
+          responsibility: "Developed structured query pipelines, LCEL chains, document ingestion, and multi-step reasoning."
         },
         {
           name: "LangGraph",
-          projects: ["AI SQL Assistant"],
-          useCase: "Building stateful, multi-agent AI systems with cycles and conversational routing.",
-          responsibility: "Authored graph-based workflow handlers to route user queries based on verification states."
+          projects: ["AI Agent Automation Platform", "Multi-Agent AI Interview Platform", "AI SQL Assistant"],
+          useCase: "Building stateful, multi-agent AI systems with cycles, persistent checkpointers, and routing.",
+          responsibility: "Authored graph-based workflow handlers with cycles, human-in-the-loop approvals, and verification loops."
         },
         {
           name: "RAG",
-          projects: ["AI SQL Assistant"],
-          useCase: "Retrieval-Augmented Generation to ground AI responses in custom, verified business schemas.",
-          responsibility: "Engineered document loading, chunking, embedding, and vector-search queries to inject context dynamically."
+          projects: ["Enterprise RAG Assistant", "AI-Powered Meeting Intelligence Assistant", "AI SQL Assistant"],
+          useCase: "Retrieval-Augmented Generation to ground AI responses in custom, verified business documents.",
+          responsibility: "Implemented Hybrid Retrieval (BM25 + Vector Search), RRF reranking, and citation guardrails achieving 92% accuracy."
+        },
+        {
+          name: "Model Context Protocol (MCP)",
+          projects: ["AI Agent Automation Platform"],
+          useCase: "Standardized open protocol connecting autonomous AI agents with live external tools and resources.",
+          responsibility: "Integrated 3+ external tools via MCP with dynamic tool calling schemas and human-in-the-loop approvals."
         },
         {
           name: "Prompt Engineering",
-          projects: ["ResumePilot", "AI SQL Assistant"],
+          projects: ["Enterprise RAG Assistant", "AI Agent Automation Platform", "ResumePilot"],
           useCase: "Crafting structured, deterministic instructions to align LLM behaviors and JSON outputs.",
           responsibility: "Designed system prompts with zero-shot, few-shot examples, and strict output constraint checks."
         },
         {
           name: "AI Agents",
-          projects: ["AI SQL Assistant"],
+          projects: ["AI Agent Automation Platform", "Multi-Agent AI Interview Platform"],
           useCase: "Autonomous decision-making loops executing tool actions and querying databases dynamically.",
-          responsibility: "Engineered tool calling pipelines allowing the LLM to write and run queries with safeguards."
+          responsibility: "Engineered tool calling pipelines and configurable step limits (8 steps/run) allowing LLMs to act with safeguards."
         },
         {
           name: "Embeddings",
-          projects: ["AI SQL Assistant"],
+          projects: ["Enterprise RAG Assistant", "AI-Powered Meeting Intelligence Assistant", "AI SQL Assistant"],
           useCase: "Generating high-dimensional semantic vectors of unstructured text for database query lookups.",
           responsibility: "Configured API utility pipelines translating text queries into token vectors in under 150ms."
         },
         {
           name: "Vector DBs (Qdrant)",
-          projects: ["AI SQL Assistant"],
+          projects: ["Enterprise RAG Assistant", "AI-Powered Meeting Intelligence Assistant", "AI SQL Assistant"],
           useCase: "High-speed indexed vector storage facilitating similarity searches on semantic document subsets.",
-          responsibility: "Designed collection index rules and performed similarity search queries on active session schemas."
+          responsibility: "Designed collection index rules and performed similarity search queries on Qdrant and ChromaDB."
         },
         {
           name: "LLM Integration",
-          projects: ["ResumePilot", "AI SQL Assistant"],
-          useCase: "Direct REST/SDK integration with Gemini API and other models for structured response payloads.",
-          responsibility: "Implemented client SDK endpoints handling streaming responses and API retry logic."
+          projects: ["Enterprise RAG Assistant", "AI Agent Automation Platform", "ResumePilot"],
+          useCase: "Direct REST/SDK integration with OpenAI, Gemini, and Mistral models for structured response payloads.",
+          responsibility: "Implemented client SDK endpoints handling streaming responses, token budgets, and API retry logic."
+        },
+        {
+          name: "AI-Assisted Tools",
+          projects: ["Enterprise RAG Assistant", "AI Agent Automation Platform"],
+          useCase: "Accelerating code authoring, automated testing, refactoring, and documentation via Copilot, Claude, and ChatGPT.",
+          responsibility: "Applied modern AI-assisted engineering practices across the development lifecycle to elevate product velocity."
         }
       ]
     },
@@ -186,27 +210,45 @@ export default function CoreSkills() {
       skills: [
         {
           name: "PostgreSQL",
-          projects: ["TrackHire"],
+          projects: ["Enterprise RAG Assistant", "TrackHire"],
           useCase: "ACID transactions, rigid relational schemas, and complex analytics mapping.",
           responsibility: "Optimized relational indexing keys on critical lookup columns to speed up dashboard charts."
         },
         {
           name: "MongoDB",
-          projects: ["ResumePilot", "CodeSync"],
+          projects: ["AI Agent Automation Platform", "ResumePilot", "CodeSync"],
           useCase: "High-throughput unstructured storage caching transient collaboration records and user metrics.",
           responsibility: "Formulated schema rules and optimized compound key lookups on active session rooms."
         },
         {
-          name: "MySQL",
-          projects: ["TrackHire", "LabourTech"],
-          useCase: "Relational persistence, normalized table setups, and complex query join logic.",
-          responsibility: "Maintained configuration mapping tables and database normalization structures."
+          name: "Redis",
+          projects: ["Multi-Agent AI Interview Platform"],
+          useCase: "In-memory caching and transient agent state management to eliminate conversational lag.",
+          responsibility: "Implemented Redis cache layers between microservices and MongoDB, cutting repeat database lookup latency."
+        },
+        {
+          name: "SQL",
+          projects: ["Enterprise RAG Assistant", "TrackHire", "AI SQL Assistant"],
+          useCase: "Relational query execution, complex joins, indexing, and schema migrations.",
+          responsibility: "Engineered performant SQL queries, foreign key constraints, and relational transaction logic."
+        },
+        {
+          name: "Schema Design & Indexing",
+          projects: ["Enterprise RAG Assistant", "TrackHire", "CodeSync"],
+          useCase: "Designing normalized relational schemas and high-throughput indexed document structures.",
+          responsibility: "Applied compound and B-tree indexing on active session keys, eliminating full-table scans."
         },
         {
           name: "Prisma ORM",
           projects: ["TrackHire"],
           useCase: "Type-safe database transactions, automated migration scripts, and schema modeling.",
           responsibility: "Engineered database interaction layers with automated foreign key constraints and validation."
+        },
+        {
+          name: "MySQL",
+          projects: ["TrackHire", "LabourTech"],
+          useCase: "Relational persistence, normalized table setups, and complex query join logic.",
+          responsibility: "Maintained configuration mapping tables and database normalization structures."
         }
       ]
     },
@@ -254,15 +296,15 @@ export default function CoreSkills() {
       skills: [
         {
           name: "Docker",
-          projects: ["CodeSync"],
+          projects: ["CodeSync", "Multi-Agent AI Interview Platform"],
           useCase: "Bundling multi-layer servers with their exact dependencies into sandboxed image templates.",
           responsibility: "Wrote multi-stage configurations, decreasing final compiled node image volumes."
         },
         {
-          name: "AWS",
-          projects: ["CodeSync"],
-          useCase: "Provisioning elastic cloud network hosting infrastructure, image registries, and stateless compute tasks.",
-          responsibility: "Configured subnets, target groups, ECS tasks, and ECR registries to support horizontal scaling."
+          name: "AWS (EC2, S3, ECS, ECR)",
+          projects: ["CodeSync", "Multi-Agent AI Interview Platform"],
+          useCase: "Provisioning elastic compute (EC2), S3 bucket storage, container registries (ECR), and container orchestration (ECS).",
+          responsibility: "Configured VPC subnets, target groups, ECS tasks, and ECR registries to support horizontal scaling."
         },
         {
           name: "GitHub Actions",
@@ -327,9 +369,9 @@ export default function CoreSkills() {
         },
         {
           name: "System Design",
-          projects: ["CodeSync"],
-          useCase: "Scaling service layers horizontally by splitting stateful and stateless connections.",
-          responsibility: "Architected microservices that separate WebSockets traffic from standard API endpoints."
+          projects: ["Enterprise RAG Assistant", "Multi-Agent AI Interview Platform", "CodeSync"],
+          useCase: "Architecting modular microservices, decoupled queues, stateful graphs, and distributed data pipelines.",
+          responsibility: "Engineered scalable system topologies isolating WebSocket connections, API routers, and AI agent worker nodes."
         }
       ]
     }

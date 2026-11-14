@@ -41,16 +41,23 @@ export default function CommandCenter() {
     
     const messages = [
       "Initializing Parvez Saifi's portfolio diagnostics...",
-      "Connecting to AWS ECS microservices... [OK]",
-      "Auditing JWT Security Layer (Http-Only cookies, Refresh Token Rotation)... [SECURE]",
-      "Verifying database indexes for PostgreSQL & MongoDB... [OPTIMIZED]",
+      "Connecting to AWS ECS & ECR microservices... [OK]",
+      "Auditing JWT Security Layer (Http-Only cookies, Refresh Token Rotation, RBAC)... [SECURE]",
+      "Verifying database indexes for PostgreSQL, MongoDB & Redis... [OPTIMIZED]",
+      "Auditing Hybrid Retrieval (BM25 + Vector Search & RRF)... [82% RECALL@5]",
+      "Evaluating source citation guardrails... [92% ACCURACY]",
+      "Validating Model Context Protocol (MCP) tool calling & LangGraph agent state... [READY]",
       "Testing Socket.io bidirectional connection latency... [14ms]",
-      "Validating Gemini AI resume analyzer parser pipeline... [100% SUCCESS]",
-      "Checking container health: 4 services active.",
+      "Checking container health: 9 services active.",
+      "Enterprise RAG Assistant (FastAPI/LangChain/Qdrant) ──> Online",
+      "AI Agent Automation Platform (LangGraph/MCP/MERN) ──> Online",
+      "AI-Powered Meeting Intelligence Assistant (Whisper/Sarvam AI/ChromaDB) ──> Online",
+      "Multi-Agent AI Interview Platform (LangGraph/Docker/AWS ECS) ──> Online",
       "TrackHire (Next.js/PostgreSQL) ──> Online",
       "CodeSync (Docker/Express/WebSockets) ──> Online",
       "ResumePilot (MERN/Gemini AI) ──> Online",
       "AI SQL Assistant (FastAPI/LangChain/LangGraph) ──> Online",
+      "LedgerX (Node.js/Express/MongoDB) ──> Online",
       "Diagnostics completed. All systems operating at production-grade efficiency."
     ];
 
@@ -92,7 +99,7 @@ export default function CommandCenter() {
     {
       id: "nav-projects",
       title: "View Shipped Products",
-      subtitle: "Explore ResumePilot, AI SQL Assistant, CodeSync, and TrackHire",
+      subtitle: "Explore Enterprise RAG Assistant, AI Agent Automation Platform, and Shipped Software",
       category: "Navigation",
       shortcut: "G P",
       icon: <Code2 className="w-4 h-4" />,
@@ -132,7 +139,7 @@ export default function CommandCenter() {
       category: "Action",
       shortcut: "⌘ L",
       icon: <ArrowRight className="w-4 h-4 animate-pulse" />,
-      action: () => window.open("https://www.linkedin.com/in/parvez-saifi-16940a361/", "_blank")
+      action: () => window.open("https://www.linkedin.com/in/parvezsaifi/", "_blank")
     },
     {
       id: "diag-run",

@@ -33,39 +33,113 @@ export default function ProjectShowcase() {
 
   const projects: ProjectDetails[] = [
     {
-      id: "aivideoassistant",
-      name: "AI Video Assistant",
-      tagline: "Multilingual Meeting Intelligence & RAG",
-      impactBadge: "Multilingual Whisper & Sarvam AI",
-      problem: "Users waste hours transcribing meetings and extracting structured action items from media files manually.",
-      challenge: "Integrating local Whisper and Sarvam AI APIs for transcription, while managing token limits for long meetings.",
-      solution: "Built a multilingual meeting intelligence system using Whisper/Sarvam AI, LangChain LCEL, and ChromaDB transcript RAG.",
-      techStack: ["Python", "FastAPI", "LangChain LCEL", "Mistral AI", "RAG", "ChromaDB", "HuggingFace Embeddings", "Whisper", "Sarvam AI"],
-      githubUrl: "https://github.com/parvezs2442/AI-Video_Assistant",
+      id: "enterprise-rag-assistant",
+      name: "Enterprise RAG Assistant",
+      tagline: "Hybrid Retrieval, Reciprocal Rank Fusion & Reranking",
+      impactBadge: "92% Citation Accuracy · 82% Recall@5",
+      problem: "Enterprise knowledge bases suffer from low retrieval recall, hallucinated responses, and an absence of verifiable source citations across large document stores.",
+      challenge: "Combining sparse and dense retrieval algorithms while keeping median response latency low and enforcing rigorous hallucination guardrails.",
+      solution: "Engineered an enterprise-grade RAG assistant using Python, FastAPI, LangChain, Qdrant, and PostgreSQL with Hybrid Retrieval (BM25 + Vector Search) and Reciprocal Rank Fusion (RRF).",
+      techStack: ["Python", "FastAPI", "LangChain", "Qdrant", "PostgreSQL", "Next.js", "TypeScript", "RAG", "Embeddings"],
+      githubUrl: "https://github.com/parvezs2442",
       architectureNodes: {
-        frontend: ["YouTube URL & video uploaders", "Transcript interactive viewer", "PDF/TXT report exporter"],
-        backend: ["FastAPI Application Server", "LangChain LCEL Pipeline", "Local Whisper Engine"],
-        database: ["ChromaDB Vector Store", "HuggingFace Embeddings Index"],
-        special: ["Sarvam AI Transcription Gateway", "RAG conversational QA engine"]
+        frontend: ["Next.js App client", "TypeScript Citation Stream", "Interactive Document Portal"],
+        backend: ["FastAPI Application Server", "LangChain Ingestion Pipeline", "RRF & Reranking Engine"],
+        database: ["Qdrant Vector Database", "PostgreSQL Document Metadata & Eval Logs"],
+        special: ["BM25 Sparse Retrieval", "Reciprocal Rank Fusion", "Automated RAG Evaluation Guardrails"]
       },
       features: [
-        "Multilingual STT: Whisper (EN) & Sarvam AI (HI/Hinglish) transcription.",
-        "LCEL Summarizer: Parallel chains extract action items and decisions.",
-        "ChromaDB RAG: Conversational QA over meeting transcripts.",
-        "Report Exporter: Exports summaries to PDF/TXT format."
+        "Document Ingestion: Automated ingestion, semantic chunking, and search across 25+ enterprise documents.",
+        "Hybrid Retrieval & RRF: BM25 + Vector Search with Reciprocal Rank Fusion, improving Recall@5 from 70% to 82% on a 40-query evaluation dataset.",
+        "Source Citations: Developed source-level citations and automated evaluation achieving 92% citation accuracy.",
+        "Guardrails & Latency: Enforced strict hallucination guardrails while reducing median response latency by 20%."
+      ],
+      engineeringDecisions: [
+        {
+          title: "Hybrid Retrieval with Reciprocal Rank Fusion (RRF)",
+          text: "Integrated BM25 keyword matching with dense Qdrant vector embeddings, reranked via Reciprocal Rank Fusion (RRF) to boost retrieval Recall@5 from 70% to 82% across a 40-query benchmark dataset."
+        },
+        {
+          title: "Automated Evaluation & Citation Guardrails",
+          text: "Engineered automated RAG evaluation workflows and hallucination guardrails that provide verifiable source-level citations, reaching 92% citation accuracy while cutting median latency by 20%."
+        },
+        {
+          title: "FastAPI & Next.js Decoupled Architecture",
+          text: "Structured a high-throughput Python FastAPI backend for heavy vector embeddings and scoring, paired with a snappy Next.js and TypeScript client for streaming responses and document management."
+        }
+      ]
+    },
+    {
+      id: "ai-agent-platform",
+      name: "AI Agent Automation Platform",
+      tagline: "Custom Agent Builder & LangGraph Workflow Orchestration",
+      impactBadge: "80% Task Completion (30+ Tasks) · MCP",
+      problem: "Complex multi-step business workflows require autonomous AI agents that can reliably invoke tools and require human approvals without entering endless loops.",
+      challenge: "Standardizing tool interactions via Model Context Protocol (MCP) while maintaining conversational state and guarding sensitive financial or data mutations.",
+      solution: "Engineered a full-stack AI Agent Automation Platform with a custom agent builder, LangGraph state orchestration, MCP tool integration, and Razorpay subscription tiering.",
+      techStack: ["MongoDB", "Express.js", "React.js", "Node.js", "LangChain", "LangGraph", "MCP", "Redux Toolkit", "Razorpay"],
+      githubUrl: "https://github.com/parvezs2442",
+      architectureNodes: {
+        frontend: ["React.js Builder UI", "Redux Toolkit State Store", "Interactive Workflow Visualizer"],
+        backend: ["Node.js Server", "Express.js API Router", "LangGraph Graph Engine", "MCP Protocol Gateway"],
+        database: ["MongoDB Document Store", "Agent Workflow History & States"],
+        special: ["Model Context Protocol (MCP)", "Human-in-the-loop Approval", "Razorpay Billing Webhooks"]
+      },
+      features: [
+        "Custom Agent Builder: Visual builder to configure and execute multi-step AI workflows with LangGraph.",
+        "Model Context Protocol (MCP): Integrated 3+ external tools using MCP with dynamic tool calling and structured schemas.",
+        "Human-in-the-Loop: Approval gates for sensitive actions; achieved an 80% task completion rate across 30+ evaluated tasks.",
+        "Execution Safeguards: Configurable step limits (8 steps/run) reducing unnecessary LLM calls; Redux Toolkit state & Razorpay billing."
+      ],
+      engineeringDecisions: [
+        {
+          title: "Model Context Protocol (MCP) Tool Integration",
+          text: "Standardized tool integration across 3+ external systems using the Model Context Protocol (MCP), enabling dynamic tool discovery and robust execution parameters with human-in-the-loop verification."
+        },
+        {
+          title: "LangGraph Stateful Workflow Graphs",
+          text: "Structured complex agent operations into stateful directed cyclic graphs using LangGraph, establishing fallback pathways and hard execution ceilings (8 steps/run) to eliminate redundant LLM calls."
+        },
+        {
+          title: "Redux State & Razorpay Subscriptions",
+          text: "Implemented centralized client state with Redux Toolkit for real-time workflow editing and integrated Razorpay for automated subscription management and billing webhooks."
+        }
+      ]
+    },
+    {
+      id: "aivideoassistant",
+      name: "AI-Powered Meeting Intelligence Assistant",
+      tagline: "Multilingual Speech Transcription & Meeting RAG",
+      impactBadge: "Whisper & Sarvam AI Multilingual STT",
+      problem: "Users and teams waste hours transcribing lengthy recordings and pulling out structured action items, decisions, and deadlines manually.",
+      challenge: "Handling multilingual audio (English, Hindi, Hinglish), managing long context windows, and delivering conversational QA over meeting archives.",
+      solution: "Built an AI-powered assistant converting meeting recordings into structured, actionable insights using Whisper, Sarvam AI, Mistral AI, ChromaDB, and Next.js.",
+      techStack: ["Next.js", "Python", "LangChain", "OpenAI Whisper", "Sarvam AI", "Mistral AI", "ChromaDB", "Hugging Face"],
+      githubUrl: "https://github.com/parvezs2442/AI-Video_Assistant",
+      architectureNodes: {
+        frontend: ["Next.js App Interface", "Meeting upload portal", "AI-powered chat & PDF/TXT report exporter"],
+        backend: ["Python Application Server", "LangChain Summarization Engine", "OpenAI Whisper Engine"],
+        database: ["ChromaDB Vector Store", "Hugging Face Embeddings Index"],
+        special: ["Sarvam AI Hinglish STT", "Action Items & Decision Extraction RAG"]
+      },
+      features: [
+        "Multilingual STT: Integrated Whisper and Sarvam AI for English, Hindi, and Hinglish speech transcription.",
+        "Automated Action Items: LangChain and Mistral AI extract summaries, key decisions, and action items with owners and deadlines.",
+        "ChromaDB RAG: Conversational retrieval pipeline over meeting transcripts powered by Hugging Face embeddings.",
+        "Next.js App Interface: Meeting uploads, AI conversational chat, and clean PDF/TXT report exports."
       ],
       engineeringDecisions: [
         {
           title: "Hybrid Speech Translation Pipeline",
-          text: "To optimize cost and accuracy, local OpenAI Whisper processes English media, while Sarvam AI API is selected for Hindi/Hinglish calls, producing clean unified transcripts."
+          text: "To optimize cost and accuracy, local OpenAI Whisper processes English media, while Sarvam AI API transcribes Hindi and Hinglish speech, producing clean unified transcripts."
         },
         {
-          title: "LangChain LCEL Chain Design",
-          text: "Leveraged LangChain Expression Language (LCEL) to construct a streamable summary generation graph. This allows faster response times by chunking transcripts and generating structured outputs in parallel."
+          title: "Action Item & Decision Extraction Chains",
+          text: "Leveraged LangChain to construct parallel summarization chains with Mistral AI, extracting structured action items with assigned owners and deadlines from meeting transcripts."
         },
         {
           title: "Embeddings Cache & ChromaDB RAG",
-          text: "Utilized HuggingFace local embeddings cached in ChromaDB to retrieve relevant context. This minimizes token consumption by querying only relevant portions of long meetings."
+          text: "Utilized Hugging Face local embeddings cached in ChromaDB to retrieve relevant context. This minimizes token consumption by querying only relevant portions of long meetings."
         }
       ]
     },

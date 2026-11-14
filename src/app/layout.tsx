@@ -13,21 +13,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Parvez Saifi | Full Stack Engineer & Systems Architect",
-  description: "B.Tech IT engineer building production-grade, containerized full-stack platforms end-to-end. Specialized in Next.js, Node.js, WebSockets, MongoDB, PostgreSQL, and AWS ECS.",
+  title: "Parvez Saifi | Full Stack Developer & AI / Generative AI Developer",
+  description: "Full Stack Developer and AI & Generative AI Developer with a B.Tech in Information Technology (2026). Skilled in React.js, Next.js, TypeScript, Node.js, Express.js, Python, FastAPI, LangChain, LangGraph, RAG, and Model Context Protocol (MCP).",
   keywords: [
     "Parvez Saifi",
     "Full Stack Developer",
-    "Software Engineer",
-    "Systems Architect",
+    "AI Developer",
+    "Generative AI Developer",
+    "React.js",
     "Next.js",
+    "TypeScript",
+    "Python",
+    "FastAPI",
     "Node.js",
     "Express.js",
-    "Socket.io",
+    "LangChain",
+    "LangGraph",
+    "RAG",
+    "Model Context Protocol",
+    "MCP",
+    "Qdrant",
     "PostgreSQL",
     "MongoDB",
+    "Redis",
     "Docker",
     "AWS",
+    "Enterprise RAG Assistant",
+    "AI Agent Automation Platform",
     "ResumePilot",
     "CodeSync",
     "TrackHire"
@@ -37,15 +49,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://github.com/parvezs2442",
-    title: "Parvez Saifi | Full Stack Engineer & Systems Architect",
-    description: "B.Tech IT graduate building production-grade full-stack applications. Focused on secure authentication, real-time systems, and clean API design.",
+    url: "https://parvezsaifi.vercel.app",
+    title: "Parvez Saifi | Full Stack Developer & AI / Generative AI Developer",
+    description: "Full Stack Developer and AI & Generative AI Developer (B.Tech IT 2026). Specializing in React, Next.js, Python, FastAPI, LangChain, LangGraph, RAG, and MCP.",
     siteName: "Parvez Saifi Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Parvez Saifi | Full Stack Engineer & Systems Architect",
-    description: "B.Tech IT graduate building production-grade full-stack applications. Focused on secure authentication, real-time systems, and clean API design.",
+    title: "Parvez Saifi | Full Stack Developer & AI / Generative AI Developer",
+    description: "Full Stack Developer and AI & Generative AI Developer (B.Tech IT 2026). Specializing in React, Next.js, Python, FastAPI, LangChain, LangGraph, RAG, and MCP.",
   }
 };
 
